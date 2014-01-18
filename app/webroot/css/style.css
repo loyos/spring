@@ -4,7 +4,7 @@ html, body {
 	height:100%;
 	width: 100%;
 	font-family: 'Kameron', sans-serif;
-	padding-bottom:0px;
+	padding-bottom: 0px;
 	margin: 0px;
 	padding: 0px;
 	background-size: cover;
@@ -19,7 +19,7 @@ html, body {
 	margin-right: auto;
 	height: auto;
 	position: relative;
-	margin-top: 0px;
+	margin-top: 10px;
 	padding: 0px;
 }
 
@@ -63,19 +63,113 @@ html, body {
 }
 
 .contenedor{
-	width: 100%;
+	width: 90%;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.carousel_wrap{
+	background-color: #0F1014;
+}
+
+#carousel .flex-control-nav{
+	display: none;
+}
+
+#carousel.flexslider{
+	border: none;
+	background: #0f1014;
+}
+
+.carousel_image {
+	float: left;
+	height: 120px;
+	width: 120px;
+	overflow: hidden;
+}
+
+.carousel_content {
+	color: white;
+	padding: 25px;
+	padding-top: 5px;
+}
+
+.carousel_content .titulo{
+	font-size: 16px;
+	float: right;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+.carousel_content .subtitulo{
+	font-size: 12px;
+	color: grey;
+	float: right;
+	margin-right: 60px;
+	margin-top: 15px;
+}
+
+#carousel.flexslider .slides img{
+	width: 120px;
+	position: relative;
+	top: -10px;
+}
+
+.cuerpo, .derecha, .izquierda, .centro{
+	background-color: white;
+}
+
+.cuerpo{
+	height: 500px;
+	font-family: 'Dosis', sans-serif;
+}
+
+.izquierda, .derecha, .centro{
+	width: 33%;
+	height: 100%;
+	float: left;
+	padding: 0px;
+	font-size: 20px;
+	padding-bottom: 0px;
+}
+
+.centro .titulo, .derecha .titulo, .izquierda .titulo{
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.texto{
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 16px;
+	text-align: justify;
+	width: 80%;
+}
+
+.cuerpo img{
+	border-radius: 10px;
+	box-shadow: black 1px 1px 1px;
+}
+
+.flexslider{
+	border: none;
+	background: #0f1014;
+}
+
+.home_fixed{
+	position: relative;
+	top: -10px;
 }
 
 #content{
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	min-height: 700px;
+	min-height: auto;
 	position: relative;
-	background-color: white;
+	background-color: #000;
 }
 
 #footer{
