@@ -53,7 +53,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-	
+			<div class = "superior">
+				<div class = "bloque_footer">
+					
+				</div>
+				<div class = "bloque_footer">
+					
+				</div>
+				<div class = "bloque_footer">
+					
+				</div>
+			</div>
+			
+			<div class = "inferior">
+				
+			</div>
 		</div>
 	</div>
 	<?php // echo $this->element('sql_dump'); ?>

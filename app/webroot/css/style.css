@@ -121,7 +121,7 @@ html, body {
 }
 
 .cuerpo{
-	height: 500px;
+	height: 650px;
 	font-family: 'Dosis', sans-serif;
 }
 
@@ -151,6 +151,24 @@ html, body {
 .cuerpo img{
 	border-radius: 10px;
 	box-shadow: black 1px 1px 1px;
+}
+
+.foto{
+	float: left;
+}
+
+.encabezado{
+	text-align: center;
+	text-transform: uppercase;
+	margin-right: 20px;
+	font-weight: bold;
+	color: grey;
+	font-size: 20px;
+}
+
+.noticia_contenido{
+	margin-left: 0px;
+	margin-top: 20px;
 }
 
 .flexslider{

@@ -41,20 +41,41 @@
 			Videos
 		</div>
 		<div class= "texto">
-			<iframe width="200" height="auto"
+			<iframe width="250" height="auto"
 				src="http://www.youtube.com/embed/XGSy3_Czz8k">
 			</iframe>
 			<br>
 			<br>
-			<iframe width="200" height="auto"
+			<iframe width="250" height="auto"
 				src="http://www.youtube.com/embed/XGSy3_Czz8k">
 			</iframe>
+		</div>
+		<div class = "titulo">
+			Informacion
+		</div>
+		<div class= "texto">
+			<?php echo $this->Html->image('soy_prospecto.png', array('width'=>'300px')); ?>
 		</div>
 	</div>
 	<div class = "derecha">
 		<div class = "titulo">
 			Noticias
 		</div>
+		<?php for ($i= 1; $i<4; $i++){ ?>
+		<div class = "noticia texto">
+			<div class = "foto">
+				<?php echo $this->Html->image('slide1.jpg', array('width'=>'90px')); ?>
+			</div>
+			<div class = "encabezado">
+				Firma de pepito machungueto
+			</div>
+			<div class = "noticia_contenido">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tortor ante, sit amet cursus dui rhoncus sit amet.
+				In accumsan odio augue.
+			</div>
+		</div>
+		<?php } ?>
+		
 	</div>	
 </div>
 
