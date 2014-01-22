@@ -24,7 +24,7 @@ html, body {
 }
 
 .menu{
-	height: 70px;
+	height: 60px;
 	background-color: #011A2D;
 	width: 100%;
 	margin: 0px;
@@ -35,13 +35,16 @@ html, body {
 	list-style: none;
 	color: white;
 	float: right;
+	margin:0px;
 	margin-right: 20px;
+	height: 100%;
 }
 
 .menu li{
 	float: left;
 	padding-right: 40px;
-	padding-top: 6px;
+	padding-top: 20px;
+	height: 100%;
 }
 
 .menu li a{
@@ -53,6 +56,45 @@ html, body {
 	color: #B33130
 }
 
+.menu ul li ul{
+	position: absolute;
+	background-color: black;
+	display: none;
+	height: auto;
+	z-index: 10;
+	top: 79px;
+	background-color: #011A2D;
+}
+
+.menu li:hover > ul{
+	display:block;
+}
+
+.menu ul li ul{
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.menu li ul li {
+	float: none;
+	list-style: none;
+	height: 30px;
+	text-align: center;
+	width: 100px;
+	padding-right: 0px;
+	padding-top: 7px;
+	font-size: 14px;
+}
+
+.menu li ul li:hover {
+	color: #011A2D;
+	background-color: white;
+}
+
+.menu li ul li:hover a{
+	color: #011A2D;
+}
 
 .header_content{
 	height: 120px;
