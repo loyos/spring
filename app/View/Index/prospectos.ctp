@@ -14,11 +14,12 @@
 			?>
 		</div>
 		<div class = "nombre">
-			<b> Nombre: </b> <?php echo $p['Prospecto']['nombre']; ?>
+			<?php echo $p['Prospecto']['posicion']?>
 		</div>
 		<div class = "info">
-			<b> Batea: </b> <?php echo $p['Prospecto']['batea']; ?> <br> 
-			<b> Lanza: </b> <?php echo $p['Prospecto']['lanza']; ?> 
+			<p><b> Nombre: </b> <?php echo $p['Prospecto']['nombre']; ?> </p>
+			<p><b> Batea: </b> <?php echo $p['Prospecto']['batea']; ?></p>
+			<p><b> Lanza: </b> <?php echo $p['Prospecto']['lanza']; ?>  </p>
 		</div>
 		
 		<div class = 'boton'>

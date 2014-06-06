@@ -46,27 +46,31 @@ html, body {
 	width: 100%;
 	margin: 0px;
 	font-family: 'Dosis', sans-serif;
+	position: relative;
+	z-index: 1000;
 }
 
 .menu ul{
 	list-style: none;
 	color: white;
 	float: right;
-	margin:0px;
+	margin: 0px;
 	margin-right: 20px;
 	height: 100%;
+	position: relative;
+	top: 1px;
 }
 
 .menu li{
 	float: left;
-	padding-right: 40px;
-	padding-top: 20px;
-	height: 100%;
+	padding: 20px 10px 20px 10px;
 }
 
 .menu li a{
 	text-decoration: none;
 	color: white;
+	padding: 21px 10px 19px 10px;
+	width: 100%;
 }
 
 .menu li a:hover {
@@ -96,10 +100,10 @@ html, body {
 .menu li ul li {
 	float: none;
 	list-style: none;
-	height: 30px;
 	text-align: center;
-	width: 100px;
+	width: 130px;
 	padding-right: 0px;
+	padding-left: 0px;
 	padding-top: 7px;
 	font-size: 14px;
 }
@@ -220,11 +224,12 @@ html, body {
 	width: 46%;
 	border-bottom: 0px solid grey;
 	background-color: #E7E8EB;
-	height: 180px;
+	height: auto;
 	padding: 10px;
 	float: left;
 	margin-left: 10px;
 	margin-top: 10px;
+	text-align: center;
 }
 
 .prospecto .foto{
@@ -237,7 +242,14 @@ html, body {
 }
 
 .prospecto .nombre, .prospecto .info{
-	margin-left: 200px;
+	margin-left: 0px;
+}
+
+.prospecto .nombre{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
 }
 
 #ver_prospecto .info{
@@ -321,22 +333,34 @@ html, body {
 	background-size: cover;
 }
 
+.prospecto p{
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+}
+
 .boton{
 	color: white;
 	background-color: #013064;
-	border-radius: 10px;
+	border-radius: 0px;
 	padding: 8px;
-	margin-top: 0px;
-	width: auto;
-	float: right;
-	margin-right: 120px;
-	margin-top: 30px;
-	box-shadow: 4px 4px 3px grey;
+	width: 97%;
+	margin-top: 5px;
+	float: left;
+	clear: both;
+	text-align: center;
+	box-shadow: 1px 1px 1px grey;
+	transition: background-color 500ms linear;
 }
 
 .boton a{
 	text-decoration: none;
 	color: white;
+	padding: 8px 40% 8px 39%;
+}
+
+.boton:hover{
+	background-color: #011A2D;
 }
 
 .chiclet{

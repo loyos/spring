@@ -33,8 +33,8 @@
 			<div class = "title">Videos:</div>
 			<div class = "thumbs">
 			<?php
-				echo $this->Html->link($this->Html->image($prospecto['Prospecto']['thumb_video1'], array('width' => '100px')), $prospecto['Prospecto']['video_1'], array('escape' => false, 'class' => 'fancybox')); 
-				echo $this->Html->link($this->Html->image($prospecto['Prospecto']['thumb_video1'], array('width' => '100px')), $prospecto['Prospecto']['video_2'], array('escape' => false));
+				echo $this->Html->link($this->Html->image($prospecto['Prospecto']['thumb_video1'], array('width' => '100px')), $prospecto['Prospecto']['video_1'], array('escape' => false, 'class' => 'fancybox-media')); 
+				echo $this->Html->link($this->Html->image($prospecto['Prospecto']['thumb_video1'], array('width' => '100px')), $prospecto['Prospecto']['video_2'], array('escape' => false, 'class' => 'fancybox-media'));
 			?>
 			</div>
 		</div>
