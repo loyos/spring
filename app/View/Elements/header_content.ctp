@@ -1,3 +1,2 @@
-﻿<div class = "header_content">
+<div class = "header_content">
 </div>
-<?php //debug($menu); ?>

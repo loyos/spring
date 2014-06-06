@@ -1,6 +1,5 @@
-﻿<div id = "carousel" class= "flexslider home_fixed">
-  <ul class="slides">
-	
+<div id = "carousel" class= "flexslider home_fixed">
+  <ul class="slides">	
 	<?php for ($i= 1; $i<9; $i++){ ?>
 	<li>
 		<div class= "carousel_content">
@@ -22,12 +21,12 @@
 <script>
   $('#carousel').flexslider({
     animation: "slide",
-    animationLoop: false,
+    animationLoop: true,
     itemWidth: 300,
     itemMargin: 2,
 	minItems: 3,
     maxItems: 3,
-	slideshow: false,
+	slideshow: true,
   });
 
 </script>
