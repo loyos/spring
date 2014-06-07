@@ -18,7 +18,7 @@
 			</ul>
 		</li>
 		<li>
-			<?php echo $this->Html->link('Prospectos',array('controller' => 'index', 'action' => 'prospectos')); ?>
+			<?php echo $this->Html->link('Prospectos',array('controller' => 'index', 'action' => 'prospectos', 'elegibles')); ?>
 			<ul>
 				<li>
 					<?php echo $this->Html->link('Elegibles',array('controller' => 'index', 'action' => 'prospectos', 'elegibles')); ?>
