@@ -32,7 +32,7 @@
 			<?php echo $this->Html->link('Staff',array('controller' => 'index', 'action' => 'index')); ?>
 		</li>
 		<li>
-			<?php echo $this->Html->link('Noticias',array('controller' => 'index', 'action' => 'index')); ?>
+			<?php echo $this->Html->link('Noticias',array('controller' => 'index', 'action' => 'noticias')); ?>
 		</li>
 		<li>
 			<?php echo $this->Html->link('Contacto',array('controller' => 'index', 'action' => 'index')); ?>

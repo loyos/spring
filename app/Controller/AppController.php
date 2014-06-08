@@ -30,4 +30,32 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	
+	var $uses = array('Noticia','Prospecto');
+	
+	// public $components = array(
+        // 'Session',
+        // 'Auth' => array(
+            // 'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+            // 'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
+			// 'authorize' => array('Controller'),
+        // )		
+    // ); 
+
+	function beforeFilter() {
+		
+		// prospectos elegibles que se mostraran en el carousel
+		
+		$prospectos_elegibles = $this->Prospecto->find('all', array(
+			'conditions' => array(
+				'status' => 'elegibles'
+			)
+		));
+		
+		
+		
+		
+		$this->set('prospectos_elegibles', $prospectos_elegibles);
+		
+	}
 }

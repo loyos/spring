@@ -3,7 +3,8 @@ class IndexController extends AppController {
 	
 	// public $helpers = array ('Html','Form');
 	public $components = array('RequestHandler');
-	public $uses = array('Prospecto');
+	public $uses = array('Prospecto','Noticia','Contacto','Config');
+	 public $helpers = array('Spring');
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
@@ -43,5 +44,24 @@ class IndexController extends AppController {
 		));
 		$this->set('prospecto', $prospecto);
 		// debug($prospecto);
+	}
+	
+	function noticias(){
+		$noticias = $this->Noticia->find('all');
+		$this->set('noticias', $noticias);
+		// debug($prospecto);
+	}
+	
+	function ver_noticia($id = null){
+		$noticia = $this->Noticia->find('first', array(
+			'conditions' => array(
+				'id' => $id
+			)
+		));
+		$this->set('noticia', $noticia);
+	}
+	
+	function contacto(){
+	
 	}
 }

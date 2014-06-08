@@ -1,16 +1,16 @@
 <div id = "carousel" class= "flexslider home_fixed">
   <ul class="slides">	
-	<?php for ($i= 1; $i<9; $i++){ ?>
+	<?php foreach($prospectos_elegibles as $p){ ?>
 	<li>
 		<div class= "carousel_content">
 			<div class= "carousel_image">
-				<?php echo $this->Html->image('bc.jpg'); ?>
+				<?php echo $this->Html->image($p['Prospecto']['foto_perfil']); ?>
 			</div>
 			<div class= "titulo">
-				Jorge Agudelo
+					<?php echo $this->Html->link($p['Prospecto']['nombre']. ' '. $p['Prospecto']['apellido'], array('controller' => 'index', 'action' => 'ver_prospecto', $p['Prospecto']['id'])); ?>
 			</div>
 			<div class= "subtitulo">
-				Real Madrid
+				<?php echo $this->Spring->stringcut($p['Prospecto']['posicion'], 10); ?>
 			</div>
 		</div>
 	</li>

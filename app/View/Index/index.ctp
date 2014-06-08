@@ -62,14 +62,14 @@
 			Noticias
 		</div>
 		<?php for ($i= 1; $i<4; $i++){ ?>
-		<div class = "noticia texto">
+		<div class = "noticia_home texto">
 			<div class = "foto">
 				<?php echo $this->Html->image('slide1.jpg', array('width'=>'90px')); ?>
 			</div>
 			<div class = "encabezado">
 				Firma de pepito machungueto
 			</div>
-			<div class = "noticia_contenido">
+			<div class = "noticia_contenido_home">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor tortor ante, sit amet cursus dui rhoncus sit amet.
 				In accumsan odio augue.
 			</div>

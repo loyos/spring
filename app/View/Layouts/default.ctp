@@ -23,7 +23,7 @@ $cakeDescription = 'Spring Training Center';
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php echo $cakeDescription ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
